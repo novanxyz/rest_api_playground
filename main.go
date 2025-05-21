@@ -55,11 +55,8 @@ func main() {
 
 	app := newApplication(db)
 	server := &http.Server{
-<<<<<<< HEAD
-		Addr:    fmt.Sprintf("%s:%s", "127.0.0.1", port),
-=======
-		Addr:    fmt.Sprintf("%s:%s", "0.0.0.0", port),
->>>>>>> 3252580ef0a5dfa3eb455fc35a757b43233beb6d
+
+		Addr:    fmt.Sprintf("%s:%s", "127.0.0.1", port )
 		Handler: app.Engine,
 	}
 
